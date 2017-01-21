@@ -1,84 +1,33 @@
- var ocean = { 
+ var elements  = [
+ { 
   "name":"Ocean",
   "photo":"./images/water.jpg",
-  "scores": [
-     5,
-     5,
-     5,
-     5,
-     5,
-     5,
-     5,
-     5,
-     5,
-     5
-   ]
-}
+  "score": 50
+},
 
-var fire = {
+{
   "name":"Fire",
   "photo":".images/fire.jpg",
-  "scores": [
-     4,
-     4,
-     4,
-     4,
-     4,
-     4,
-     4,
-     4,
-     4,
-     4
-   ]
-}
+  "score": 40
+},
 
-var wind = {
+{
   "name":"Wind",
   "photo":".images/wind.jpg",
-  "scores": [
-     3,
-     3,
-     3,
-     3,
-     3,
-     3,
-     3,
-     3,
-     3,
-     3
-   ]
-}
+  "score": 30
+},
 
-var mountains = {
+{
   "name":"Mountains",
   "photo":".images/earth_mountains.jpg",
-  "scores": [
-     2,
-     2,
-     2,
-     2,
-     2,
-     2,
-     2,
-     2,
-     2,
-     2
-   ]
-}
+  "score": 20
+},
 
-var ground = {
+{
   "name":"Ground",
   "photo":".images/earth_rock.jpg",
-  "scores": [
-     1,
-     1,
-     1,
-     1,
-     1,
-     1,
-     1,
-     1,
-     1,
-     1
-   ]
+  "score": 10
 }
+]
+
+module.exports = elements;
