@@ -5,22 +5,21 @@ var path = require('path');
 
 //set up
 var app = express();
-var PORT = 8080;
+var PORT = 8675;
 
 
 app.use(express.static('./app/public'))
-app.use(bodyParser.urlencoded({extended: false}))
-
 app.use(bodyParser.json())
+app.use(bodyParser.text());
+app.use(bodyParser.urlencoded ({ extended:true }));
+app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
-// app.use(function(req,res){
 
-// })
 
 require('./app/routing/htmlRoutes.js')(app);
 
 require('./app/routing/apiRoutes.js')(app);
 
 app.listen(PORT,function(){
-	console.log("App is listening!");
+	console.log("App is listening on port: " +PORT );
 });

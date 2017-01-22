@@ -1,16 +1,27 @@
 {
-  "name": "app",
+  "name": "elementsFinder",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": "6.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/morgangonz/elements"
   },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/morgangonz/elements"
+  },
+  "homepage": "https://github.com/morgangonz/elements",
   "dependencies": {
     "body-parser": "^1.16.0",
     "express": "^4.14.0",
     "path": "^0.12.7"
-  }
-}
+ 

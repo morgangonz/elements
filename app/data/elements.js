@@ -2,31 +2,86 @@
  { 
   "name":"Ocean",
   "photo":"./images/water.jpg",
-  "score": 50
+  "score": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+  ]
 },
 
 {
   "name":"Fire",
   "photo":".images/fire.jpg",
-  "score": 40
+  "score": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+  ]
 },
 
 {
   "name":"Wind",
   "photo":".images/wind.jpg",
-  "score": 30
+  "score": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+  ]
 },
 
 {
   "name":"Mountains",
   "photo":".images/earth_mountains.jpg",
-  "score": 20
+  "score": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+  ]
 },
 
 {
   "name":"Ground",
   "photo":".images/earth_rock.jpg",
-  "score": 10
+  "score": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+  ]
 }
 ]
 
