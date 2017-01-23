@@ -10,20 +10,20 @@ module.exports = function(app){
 // ...the JSON is pushed to the appropriate Javascript array
 
 	//display images on webpage: http://localhost:8675/images/fire.jpg
-	app.get('/images/fire.jpg', function (req, res) {
-	    res.sendfile(path.resolve('./app/images/fire.jpg'));
+	app.get('/images/fireee.jpg', function (req, res) {
+	    res.sendfile(path.resolve('./app/images/fireee.jpg'));
 	});
-	app.get('/images/rock.jpg', function (req, res) {
-	    res.sendfile(path.resolve('./app/images/rock.jpg'));
+	app.get('/images/pile_rocks.jpg', function (req, res) {
+	    res.sendfile(path.resolve('./app/images/pile_rocks.jpg'));
 	});
-	app.get('/images/mountain.jpg', function (req, res) {
-		res.sendfile(path.resolve('./app/images/mountain.jpg'));
+	app.get('/images/mountains_..jpg', function (req, res) {
+		res.sendfile(path.resolve('./app/images/mountains_..jpg'));
 	});
-	app.get('/images/water.jpg', function (req, res) {
-		res.sendfile(path.resolve('./app/images/water.jpg'));
+	app.get('/images/wave_surfer.jpg', function (req, res) {
+		res.sendfile(path.resolve('./app/images/wave_surfer.jpg'));
 	});
-	app.get('/images/wind.jpg', function (req, res) {
-		res.sendfile(path.resolve('./app/images/wind.jpg'));
+	app.get('/images/windy.jpg', function (req, res) {
+		res.sendfile(path.resolve('./app/images/windy.jpg'));
 	});
 
 
@@ -42,36 +42,36 @@ module.exports = function(app){
 				//show rocks/ground
 				res.send({
 					name:"You're a Rock",
-					desription: "You like independence",
-					photo:'/images/rock.jpg'
+					desription: "You provide great support and are think wisely about your choices.",
+					photo:'/images/pile_rocks.jpg'
 				})
 			} else if (elementScores >= 16 && elementScores <= 24){
 				//show mountains
 				res.send({
 					name:"You're a Mountain",
-					description: "Strong and steady",
-					photo:'/images/mountain.jpg'
+					description: "You are strong and steady and constantly seeking more in life",
+					photo:'/images/mountains_..jpg'
 				})
 			} else if (elementScores >= 25 && elementScores <= 34){
 				//show wind
 				res.send({
 					name:"You're Wind",
-					description: "You think and act swiftly.",
-					photo:'/images/wind.jpg'
+					description: "You think and act swiftly, but can easily be swayed.",
+					photo:'/images/windy.jpg'
 				})
 			} else if (elementScores >= 35 && elementScores <= 44){
 				//show fire
 				res.send({
 					name:"You're Fire",
-					description: "Full of energy",
-					photo:'/images/fire.jpg'
+					description: "You are full of energy and like change.",
+					photo:'/images/fireee.jpg'
 				})
 			} else if (elementScores >= 45 && elementScores <= 50){
 				//show water
 				res.send({
 					name:"You're Water",
-					description: "Approximately 60%",
-					photo:'/images/water.jpg'
+					description: "You go with the flow and let the ride of life take you.",
+					photo:'/images/wave_surfer.jpg'
 				})
 			}
 
