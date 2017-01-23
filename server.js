@@ -5,7 +5,7 @@ var path = require('path');
 
 //set up
 var app = express();
-var PORT = 8675;
+app.set('port', (process.env.PORT || 8675));
 
 
 app.use(express.static('./app/public'))
@@ -20,6 +20,6 @@ require('./app/routing/htmlRoutes.js')(app);
 
 require('./app/routing/apiRoutes.js')(app);
 
-app.listen(PORT,function(){
-	console.log("App is listening on port: " +PORT );
+app.listen(app.get('port'), function() {
+  console.log('Node app is running on port', app.get('port'));
 });
